@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+       <meta charset="UTF-8">
+       <title> Text-Synthesizer </title>
+   </head> 
+   <body>
+       <h1> Welcome to the Text-Synthesizer Django Application, by Snehan Biswas.
+           <br> <h2> Enter yout text below. </h2> 
+       </h1>
+       <form action='/synthesize' method='get'>
+           <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'>
+        </textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="removePunctuation"> 
+        Remove Punctuations <br>
+
+        <input type="checkbox" name="keyphraseExtractor"> 
+        Synthesize Keyphrases <br>
+
+        <input type="checkbox" name="UpperCaseSynthesizer"> 
+        Upper Case Text-Synthesizer <br>
+
+        <input type="checkbox" name="UpperCasePunctuationSynthesizer"> 
+        Upper Case and Punctuation Text-Synthesizer <br>
+
+        <input type="checkbox" name="UpperCaseKeywordSynthesizer"> 
+        Upper Cased Keyword Synthesizer <br>
+
+        <br>
+        <button type='submit'> synthesize Text Data 
+        </button>
+       </form>
+   </body>
+</html>
